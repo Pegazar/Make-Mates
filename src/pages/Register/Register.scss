@@ -1,0 +1,98 @@
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #e5e5e5;
+  height: 100vh;
+
+  .card {
+    width: 420px;
+    height: 444px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 21px;
+    position: relative;
+
+    .svg-link {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    h1 {
+      padding-bottom: 30px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      color: #000;
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+
+      input {
+        width: 293px;
+        height: 49px;
+        background: #f9fafb;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        padding: 15px 10px 15px 20px;
+      }
+
+      input::placeholder {
+        color: #98a2b3;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      button {
+        width: 296px;
+        height: 48px;
+        background: #36bffa;
+        color: #fff;
+        border-radius: 16px;
+        border: none;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 17px;
+        cursor: pointer;
+      }
+
+      button:disabled {
+        background: #D0D5DD;
+      }
+
+      span {
+        margin-top: 8px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #0086c9;
+
+        a {
+          text-decoration: none;
+          color: #0086c9;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .register {
+    .card {
+      width: 360px;
+    }
+  }
+}

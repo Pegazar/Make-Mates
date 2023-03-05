@@ -1,0 +1,75 @@
+.firstpageabout {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .about-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    h2 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 38px;
+      color: #000000;
+      margin-bottom: 70px;
+      border-bottom: 2px solid #FEC84B;
+      padding-bottom: 10px;
+    }
+  }
+
+  .fpa-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 100px;
+    margin-bottom: 85px;
+
+    .fpa-text {
+      width: 311px;
+      height: 104px;
+      text-align: center;
+
+      h3 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #000;
+      }
+    }
+  }
+  .fpa-box:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .firstpageabout {
+    .fpa-box{
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .firstpageabout {
+    .about-title{
+      h2 {
+        font-size: 34px;
+      }
+    }
+  }
+}

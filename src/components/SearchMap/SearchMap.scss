@@ -1,0 +1,83 @@
+.searchmap {
+  margin-top: 50px;
+  margin-left: 205px;
+  
+
+  h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+    margin-bottom: 31px;
+  }
+
+  .map-area {
+    display: flex;
+    align-items: center;
+
+    .map-box {
+      width: 550px;
+      height: 286px;
+      background: #f5fbff;
+      border: 1px solid #e0f2fe;
+      border-radius: 0px 16px 16px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      h4 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #000;
+      }
+
+      .map-search {
+        display: flex;
+        align-items: center;
+
+        select {
+          width: 236px;
+          height: 44px;
+          padding: 10px;
+          background: #fff;
+          border: 1px solid #0086c9;
+          border-radius: 16px;
+          -webkit-appearance: none;
+          appearance: none;
+          background: url("../../assets/home/selectdown.png");
+          background-origin: content-box;
+          background-repeat: no-repeat;
+          background-position: right center;
+          cursor: pointer;
+          margin-right: 10px;
+
+          & option {
+            font-size: 14px;
+            background-color: #fff;
+          }
+          &::placeholder {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 24px;
+            color: #98a2b3;
+          }
+        }
+
+        button {
+          width: 44px;
+          height: 44px;
+          padding: 10px;
+          background: #f79009;
+          border-radius: 16px;
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
