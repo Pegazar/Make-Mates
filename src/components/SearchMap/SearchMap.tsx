@@ -13,6 +13,7 @@ const SearchMap: React.FC<MapProps> = ({ src, width, height }) => {
       <h2>Ev axtarırsan? - Axtaran tapar 🙃</h2>
       <div className="map-area">
         <iframe
+          title="Map of search results"
           src={src}
           width={width}
           height={height}
