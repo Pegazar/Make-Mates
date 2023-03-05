@@ -17,7 +17,6 @@
     "@types/react-router-dom": "^5.3.3",
     "firebase": "^9.17.1",
     "formik": "^2.2.9",
-    "performance-time": "^1.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.0",
