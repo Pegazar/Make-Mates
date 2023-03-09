@@ -1,0 +1,20 @@
+.homeFooter {
+    background: #000;
+    width: 100%;
+
+    .ft-area {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        justify-content: space-evenly;
+        .home-socials {
+            padding: 38px 0px 38px 0px;
+            
+            svg {
+                margin-right: 22px;
+            }
+        }
+    }
+ 
+}
+

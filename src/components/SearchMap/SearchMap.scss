@@ -1,7 +1,6 @@
 .searchmap {
   margin-top: 50px;
   margin-left: 205px;
-  
 
   h2 {
     font-weight: 600;
@@ -25,12 +24,15 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      position: relative;
 
       h4 {
         font-weight: 600;
         font-size: 18px;
         line-height: 24px;
         color: #000;
+        position: absolute;
+        top: 80px;
       }
 
       .map-search {
@@ -52,6 +54,7 @@
           background-position: right center;
           cursor: pointer;
           margin-right: 10px;
+          outline: none;
 
           & option {
             font-size: 14px;
@@ -81,3 +84,34 @@
     }
   }
 }
+
+@media only screen and (max-width: 1500px) {
+  .searchmap {
+    margin-left: 40px;
+
+    .map-area {
+      iframe {
+        width: 60%;
+      }
+      .map-box {
+        width: 450px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  .searchmap {
+
+    .map-area {
+      iframe {
+        width: 100%;
+      }
+      .map-box {
+        width: 600px;
+      }
+    }
+  }
+}
+
+

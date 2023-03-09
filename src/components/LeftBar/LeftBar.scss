@@ -1,7 +1,6 @@
 .leftBar {
   width: 90px;
   background: #0ba5ec;
-  height: 100vh;
 
   .left-area {
     display: flex;
@@ -23,5 +22,11 @@
     line-height: 24px;
     padding: 24px 20px 104px;
     color: #fff;
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  .leftBar {
+    display: none;
   }
 }

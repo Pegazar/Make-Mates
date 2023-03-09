@@ -1,0 +1,113 @@
+.apartment {
+  .ap-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 96px 47px 0px 205px;
+
+    h4 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      color: #000;
+    }
+
+    .ap-swiper {
+      svg:first-child {
+        margin-right: 17px;
+      }
+    }
+  }
+
+  .ap-boxes {
+    margin: 23px 47px 30px 205px;
+    display: flex;
+    gap: 92px;
+
+    .box {
+      width: 255px;
+      background: #ffffff;
+      box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.13);
+      border-radius: 8px;
+
+      .ap-img {
+        position: relative;
+        button {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 36px;
+          height: 36px;
+          background: #fff;
+          border-radius: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        span {
+          padding: 9px 10px;
+          background: #f79009;
+          color: #fff;
+          border-radius: 8px;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 6px;
+          position: absolute;
+          top: 157px;
+          left: 13px;
+        }
+      }
+
+      .box-area {
+        display: flex;
+        padding: 29px 79px 40px 14px;
+
+        svg {
+          margin: 5px 5px 0px 0px;
+        }
+
+        .box-text {
+          h5 {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 24px;
+            color: #000;
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 24px;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .apartment {
+    .ap-area {
+      margin: 96px 47px 0px 40px;
+    }
+
+    .ap-boxes {
+      margin: 23px 47px 40px 40px;
+      gap: 65px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  .apartment {
+
+    .ap-boxes {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-self: center;
+    }
+  }
+}
