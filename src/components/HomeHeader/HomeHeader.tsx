@@ -41,7 +41,7 @@ const HomeHeader: React.FC = () => {
                 fill="#F97066"
               />
             </svg>
-            <input type="search" placeholder="Tapa bilmirsən?.." />
+            <input type="text" placeholder="Tapa bilmirsən?.." />
           </div>
           <div className="right-area">
             <div className="language">
