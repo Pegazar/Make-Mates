@@ -60,6 +60,7 @@
             font-size: 14px;
             background-color: #fff;
           }
+
           &::placeholder {
             font-weight: 400;
             font-size: 12px;
@@ -102,8 +103,9 @@
 
 @media only screen and (max-width: 1380px) {
   .searchmap {
-
+    margin: 35px;
     .map-area {
+      justify-content: center;
       iframe {
         width: 100%;
       }
@@ -114,4 +116,42 @@
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .searchmap {
+    h2 {
+      text-align: center;
+      margin: 30px 0px 0px;
+      padding-bottom: 30px;
+    }
 
+    .map-area {
+      display: flex;
+      flex-direction: column-reverse;
+
+      iframe {
+        width: 100%;
+        $iframe-border-radius: 0;
+      }
+      .map-box {
+        width: 100%;
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .searchmap {
+    h2 {
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .searchmap {
+    h2 {
+      font-size: 18px;
+    }
+  }
+}

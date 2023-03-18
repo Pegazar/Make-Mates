@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import language from "../../assets/home/lang.png";
 import profile from "../../assets/home/profile.png";
-import "./HomeHeader.scss"
+import { logout } from "../../firebase";
+import { logout as logoutHandle } from "../../store/auth";
+import "./HomeHeader.scss";
 
 const HomeHeader: React.FC = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const [open, setOpen] = useState(false);
+
+  const handleLogout = async () => {
+    await logout();
+    dispatch(logoutHandle());
+    navigate("/login", {
+      replace: true,
+    });
+  };
+
   return (
     <div>
       <div className="rightBar">
@@ -34,6 +50,60 @@ const HomeHeader: React.FC = () => {
             <div className="profile">
               <img src={profile} alt="" />
             </div>
+            <button className="logout" onClick={handleLogout}>
+              <svg
+                width="27"
+                height="25"
+                viewBox="0 0 27 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.25 1.16675H22.5C24.0648 1.16675 25.3333 2.43527 25.3333 4.00008L25.3333 21.0001C25.3333 22.5649 24.0648 23.8334 22.5 23.8334H18.25M12.5833 18.1667L18.25 12.5001M18.25 12.5001L12.5833 6.83341M18.25 12.5001H1.25"
+                  stroke="#a4a6aae2"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div className="home-burger-menu">
+            <button
+              className={`home-burger-menu__button ${open ? "open" : ""}`}
+              onClick={() => setOpen(!open)}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <nav className={`home-burger-menu__nav ${open ? "open" : ""}`}>
+              <div className="right-area">
+                <div className="language">
+                  <img src={language} alt="" />
+                </div>
+                <div className="profile">
+                  <img src={profile} alt="" />
+                </div>
+                <button className="logout" onClick={handleLogout}>
+                  <svg
+                    width="27"
+                    height="25"
+                    viewBox="0 0 27 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.25 1.16675H22.5C24.0648 1.16675 25.3333 2.43527 25.3333 4.00008L25.3333 21.0001C25.3333 22.5649 24.0648 23.8334 22.5 23.8334H18.25M12.5833 18.1667L18.25 12.5001M18.25 12.5001L12.5833 6.83341M18.25 12.5001H1.25"
+                      stroke="#a4a6aae2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </nav>
           </div>
         </div>
       </div>

@@ -135,7 +135,7 @@ const LeftBar: React.FC = () => {
             />
           </svg>
         </button>
-        <button onClick={handleLogout}>
+        <button className="logout" onClick={handleLogout}>
           <svg
             width="27"
             height="25"

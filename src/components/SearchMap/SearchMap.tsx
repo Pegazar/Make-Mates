@@ -17,7 +17,7 @@ const SearchMap: React.FC<MapProps> = ({ src, width, height }) => {
           src={src}
           width={width}
           height={height}
-          style={{ border: 0, borderRadius: "16px 0px 0px 16px" }}
+          style={{ border: 0 }}
           allowFullScreen={true}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
