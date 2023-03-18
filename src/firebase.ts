@@ -11,12 +11,12 @@ import store from "./store";
 import { login as loginHandle, logout as logoutHandle } from "./store/auth";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_ID,
+  apiKey: "AIzaSyA3zRrRZe5bucUeGe7PKlAvCnU5lmoGP6c",
+  authDomain: "make-mates.firebaseapp.com",
+  projectId: "make-mates",
+  storageBucket: "make-mates.appspot.com",
+  messagingSenderId: "203832393793",
+  appId: "1:203832393793:web:887e16c7e138eb705046c0"
 };
 
 const app = initializeApp(firebaseConfig);
