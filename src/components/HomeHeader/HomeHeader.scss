@@ -7,22 +7,28 @@
     justify-content: space-between;
     align-items: center;
 
-    .search {
-      width: 254px;
-      height: 36px;
-      padding: 6px 60px 6px 10px;
-      gap: 6px;
-      background: #fff;
-      border: 1px solid #e4e7ec;
-      box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.05);
-      border-radius: 16px;
+    .search-box {
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
+
+      svg {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
 
       input {
+        width: 254px;
+        height: 36px;
+        padding: 6px 60px 6px 30px;
+        gap: 6px;
+        background: #fff;
+        border: 1px solid #e4e7ec;
+        box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.05);
+        border-radius: 16px;
         outline: none;
-        border: none;
       }
 
       input::placeholder {
@@ -189,13 +195,13 @@
     width: 100%;
     margin: 40px 0px 0px 0px;
 
-
     .home-header {
       justify-content: space-around;
 
-      .search {
-        width: 195px;
-        padding: 6px 10px 6px 10px;
+      .search-box {
+        input {
+          width: 195px;
+        }
       }
 
       .home-burger-menu {
@@ -204,8 +210,3 @@
     }
   }
 }
-
-
-
-
-

@@ -24,7 +24,7 @@ const HomeHeader: React.FC = () => {
     <div>
       <div className="rightBar">
         <div className="home-header">
-          <div className="search">
+          <div className="search-box">
             <svg
               width="16"
               height="15"
