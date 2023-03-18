@@ -5,6 +5,7 @@ import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signOut,
+  connectAuthEmulator,
 } from "firebase/auth";
 import toast from "react-hot-toast";
 import store from "./store";
@@ -20,7 +21,9 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const auth = getAuth();
+const auth = getAuth(app);
+
+connectAuthEmulator(auth, 'http://localhost:8081');
 
 export const register = async (email: string, password: any) => {
   try {
